@@ -3,6 +3,11 @@
 This is a fun project, inspired by talk of richard sutton - [Tutorial: Introduction to Reinforcement Learning with Function Approximation
 ](https://www.youtube.com/watch?v=ggqnxyjaKe4)
 
+## Play with this repo
+```
+python3 learn_mdp.py
+```
+
 Here the user is a reinforcement learning agent and he tries to find the optimal policy to gain maximum rewards. The environment has two states A and B. User can take 2 actions - 1,2 . Based on user's action in a state he gets positive or negative reward/feedback.
 
 ![True model of the world](https://github.com/vaibhawvipul/tildy-mdp/blob/master/true%20model%20of%20the%20world.jpeg)
