@@ -85,16 +85,17 @@ def printMsg(mdp):
 
 def getGlobals():
     global actions_to_take
-    return actions_to_take
+    global states
+    return actions_to_take, states
 
 
 if __name__ == "__main__":
-    actions_to_take = getGlobals()
+    actions_to_take, _ = getGlobals()
     while True:
         printMsg(mdp)
         userInput = int(input())
         if userInput not in actions_to_take:
-            print("Invalid action. Please choose one of {}".format(actions_to_take))
+            print("Invalid action. Please choose an option from {}".format(actions_to_take))
             continue
         changeState(current_state, userInput)
         time_step = time_step + 1 
